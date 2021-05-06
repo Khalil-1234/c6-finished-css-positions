@@ -1,0 +1,42 @@
+body{
+    box-sizing: border-box;
+    padding: 5px;
+}
+.container{
+    display: grid;
+    grid-template-rows: 100px 150px 300px 100px;
+    grid-template-columns: repeat(3,150px)100px;
+    grid-gap: 30px;
+
+}
+.header{
+    background-color: red;
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    width: 100%;
+}
+.smallbox-1{
+    background-color: red;
+}
+.smallbox-2{
+    background-color: red;
+}
+.smallbox-3{
+
+    background-color: red;
+}
+.sidebar{
+    background-color: red;
+    grid-row: 2/4;
+    grid-column: 4/5;
+}
+.main-content{
+    background-color: red;
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+.footer{
+    background-color: red;
+    grid-row: 4/5;
+    grid-column: 1/-1;
+}
